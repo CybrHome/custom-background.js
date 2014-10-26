@@ -1,6 +1,8 @@
 # custom-background.js
 
-> Easily add background themes option to your website in a few minutes
+> Easily add background themes option to your website in a few minutes.
+
+## Intro
 
 A lightweight jQuery plugin  to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app without any compromise on website's performance.
 
@@ -26,6 +28,29 @@ A lightweight jQuery plugin  to allow users change the website’s default backg
 * Choose background color using color picker
 * Live changing background colors
 
+
+## Documentation
+
+###### Getting Started
+
+Include **custombg** folder in your project, just right where your html files reside.
+
+Create a button that will load change background window
+```html
+<input type="button" value="Change Background" onclick="loadOptionsWindow()">
+```
+
+
+###### Using HTML5 Appcache 
+
+Though use of appcache is recommended for best possible performance, it is still optional. Please use appcache only if you are comfortable using it. However, if you do not use appcache manifest, you have to depend on leverage browser caching only.
+
+To use appcache, simple include the manifest file named **custombg.manifest** in the html tag of the web page.
+
+```html
+  <!DOCTYPE html>
+  <html manifest="custombg/custombg.manifest">
+```
 
 ## Idea
 
