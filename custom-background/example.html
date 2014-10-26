@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	
+    <title>My WebApp</title>
+
+    <meta charset="utf-8">
+    <meta name="product" content="Cybrhome-Background.js">
+    <meta name="description" content="Demonstration of Cybrhome-Background.js on a sample webapp page">
+    <meta name="author" content="CybrSys">
+    <meta name="keywords" content="Cybrhome-Background.js,Background.js,chbg,jquery plugin,custom background,background plugin">
+    <script src='custombg/js/jquery/jquery.min.js'></script>
+  	<script src="custombg/js/jquery/jquery-ui.min.js"></script>
+
+	<style>
+        #header{
+            margin:0;
+        }
+        #header > li{
+            display:inline; padding:10px; height:50px !important;
+        }
+        .section-4-5{
+            width:95% !important;
+        }
+        .section-1-5{
+            width:5%;
+			cursor:pointer;
+        }
+       .section-1-5:hover{
+		   background-color:red;}		
+        #search{
+            width:500px; display:inline;
+        }
+        body{
+            width:100%; margin:0; color:#999;
+        }
+        .fg-lightblack{
+            color:#666;
+        }
+        #search-btn{
+            margin-bottom: 10px !important;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #search-btn:active{
+            opacity:0.9;
+        }
+        bg-lightblack{
+            background-color:rgba(24,20,35,0.5);
+        }
+        #chbg{
+            cursor:pointer;
+            width:20px;
+			margin-right:25px;
+            float:right;
+        
+        }
+
+        #chbg:active{
+            opacity:0.9;
+        }
+		
+		body{
+			background-color:skyblue;
+		}
+    </style>
+
+</head>
+
+<body>
+
+   <div id="main-div" class="fg-creamy bg-lightgrey">
+  
+   
+    </div><!-- main div closed-->
+
+ 
+    
+    
+<div class="bg-lightblack fg-creamy" style="width:100%; margin-top:0;">
+	<div class=" bg-lightblack box section-4-5">
+    	<p class="font-med X-5">My WebApp</p>
+    </div>
+	<div class="bg-lightblack box section-1-5" style="text-align:right;">
+    	<p id="chbg" class="font-med" onClick="loadOptionsWindow()">
+        	<span>+</span>
+        </p>
+    </div>
+</div>
+
+    
+<input type="button" style="visibility:hidden;" onClick="loadOptionsWindow()">
+    
+ <div>
+ 	<p>
+    	<h1 class="fg-theme" style="text-align:center; margin-top:80px; font-size:80px !important;font-family: monospace;">My WebApp</h1>
+ 		<h2 class="fg-theme" style="text-align:center; font-size:30px !important;font-family: monospace;">Click '+' to change background</h2>
+     </p>
+  </div>   
+    
+ <div id="search-div" class="padding10" style="background:rgba(255,255,255,0.5); width:800px; margin-top:50px; margin-left:250px;">   
+ 	<input id="search" type="text" placeholder="Search" class="padding10 font-med fg-lightblack">
+ 	<select class="padding10 font-med" style="color:#666;">
+ 		<option>Categories</option>
+ 		<option>Category-1</option>  
+        <option>Category-2</option>
+        <option>Category-3</option>
+        <option>Category-4</option>
+        <option>Category-5</option>
+  	</select>
+  	<span id="search-btn" class="font-med padding10 fg-creamy bg-theme-col-2">Search</span>           
+ </div>
+ 
+    <div id="theme-div">
+      <img id="demo-img-1" class="bgfade">
+      <img id="demo-img-2" class="bgfade">
+      <img id="demo-img-3" class="bgfade">
+      <img id="demo-img-4" class="bgfade">
+      <img id="demo-img-5" class="bgfade">
+      <img id="demo-img-6" class="bgfade">
+      <img id="demo-img-7" class="bgfade">
+      <img id="demo-img-8" class="bgfade">
+      <img id="demo-img-9" class="bgfade">
+      <img id="demo-img-10" class="bgfade">
+      
+    </div>    
+    
+    <script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
+	<link rel="stylesheet" href="custombg/css/options-window.css">
+
+
+</body>
+</html>

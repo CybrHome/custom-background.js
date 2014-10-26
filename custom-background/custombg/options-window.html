@@ -1,0 +1,259 @@
+<div>	
+ 
+ <div id="tabs">
+  
+  <ul style="background:#013e5f;">
+    <li class="X-list Y20 section-1-2 text-center font-med  cursor-default" style="background:#013e5f;margin:0;">
+    	<a class="fg-theme tab-1" style=" padding:20px 146px;outline:0 !important;">Images</a>
+    </li>
+    <li class="X-list Y20 section-1-2 text-center font-med  cursor-default" style="background:#013e5f; margin:0;">
+    	<a class="fg-theme section-1-3 tab-2" style=" padding:20px 146px;outline:0 !important;">Colors</a>
+    </li>
+	<!--<li class="X-list Y15 section-1-3 text-center font-trial" style="background:#013e5f; margin:0;">
+    	<a href="#tabs-3" class="fg-theme tab-3" style="outline:0 !important; padding:15px 90px;">Setting</a>
+    </li>-->   
+  </ul>
+
+  
+<div id="tabs-1" class="font-trial">
+<div class="bg-lightgrey" style="width:700px; margin-bottom:20px;">
+   
+      <ul style="background:#01527D; width:700px; border-top:2px solid #01527D;">
+        <li id="choose-img" class="bg-blueblack text-center font-trial font-small image-list Y15">Choose Image</li>
+        <li id="random-img" class="bg-blueblack text-center font-trial font-small image-list Y15">Random Image</li>
+        <li id="custom-img" class="bg-blueblack text-center font-trial font-small image-list Y15">Custom Image</li>
+        <li id="auto-img" class="bg-blueblack text-center font-trial font-small image-list Y15">Auto Change</li>
+        <li id="setting" class="bg-blueblack text-center font-trial font-small cursor-default" style="padding-top:12px; padding-bottom:15px; width:8%; display:inline-block;"><img src="custombg/images/white-cog-hi.png" style=" margin-bottom:0px; height:16px;"></li>
+     </ul>
+   
+   <div style="padding-left:15px;">
+     <div id="choose-img-content" class="fg-black text-center" style="height:300px; overflow-y:scroll;"> 
+        
+         <div class="text-center" >
+          <div id="block-1" class="box text-center">
+            <p><span class="fg-primary font-trial font-big">All</span></p>
+                            <script type="text/javascript"> theme(1,10,1,'block-1'); </script>             
+          </div>
+
+            <div id="block-2" class="box text-center">
+            <p class="top15 text-center"><span class="fg-primary font-trial font-big">Girls</span></p>
+
+                            <script type="text/javascript">// theme(1,10,2,'block-2'); </script>             
+
+            </div>
+
+            <div id="block-3" class="box text-center">
+            <p class="top15"><span class="fg-primary font-trial font-big">Cars</span></p>
+
+                            <script type="text/javascript">// theme(1,10,3,'block-3'); /*(first image,last image,theme no,block id)*/ </script>             
+
+            </div>
+
+            <div id="block-4" class="box">
+            <p class="top15"><span class="fg-primary font-trial font-big"> Nature </span></p>
+
+                            <script type="text/javascript">// theme(1,10,4,'block-4'); /*(first image,last image,theme no,block id)*/ </script>             
+            
+            </div>
+         </div>
+
+     </div>
+     
+     <div id="random-img-content" class="fg-black X-5 text-center" > 
+        <div class="top15 X-10" style="height:285px;">
+           <div id="random_theme-1" class="box padding5 cursor-default"><img name="theme" src="custombg/images/bg-themes/all/all1.jpg" style="width:220px; height:120px;"></div>
+           <div id="random_theme-2" class="box padding5 cursor-default"><img name="theme" src="custombg/images/bg-themes/cars/car1.jpg" style="width:220px; height:120px;"></div>
+           <div id="random_theme-3" class="box padding5 cursor-default"><img name="theme" src="custombg/images/bg-themes/girls/girl1.jpg" style="width:220px; height:120px;"></div>
+           <div id="random_theme-4" class="box padding5 cursor-default"><img name="theme" src="custombg/images/bg-themes/nature/nature1.jpg" style="width:220px; height:120px;"></div>
+        </div>		
+     </div>
+     
+     <div id="custom-img-content" class="fg-black text-center"> 
+         <div id="browsefile" class="top15" style="height:285px;">          
+     	<div class="font-med" style="z-index:1150px; padding-top:60px !important;">Set your own image as a background</div>  
+
+             <div style="padding-right:120px; padding-top:20px;">
+                 <img src="custombg/images/black-arrow.png" style="z-index:9999; width:8%; height:20%;" />
+ 				<p style="padding-left:150px; padding-top:20px;">
+              	<input id="backgroundbtn" style="display:none" type="file" onchange="loadImageFile(this)" accept="image/*">
+                <label class="button bg-green padding10 fg-creamy cursor-default" title="Choose a custom background image" for="backgroundbtn">Upload Image</label>
+                <label class="button bg-green padding10 fg-creamy cursor-default" title="Set default background" for="defaultbtn">Default Image</label>
+                <button id="defaultbtn" class="button" style="display:none" onclick="defaultbg()"></button>
+                 </p>                  
+             </div>
+         </div>      
+     </div>
+
+
+     <div id="auto-img-content" class="fg-black X-5">
+         <div class="X-10 top15" style="height:285px;">
+            <div id="auto_theme-1" class="box padding5"><img name="theme" src="custombg/images/bg-themes/all/all1.jpg" onclick="demo_image(id)" style="width:220px; height:120px;"></div>
+            <div id="auto_theme-2" class="box padding5"><img name="theme" src="custombg/images/bg-themes/cars/car1.jpg" onclick="demo_image(id)" style="width:220px; height:120px;"></div>
+            <div id="auto_theme-3" class="box padding5"><img name="theme" src="custombg/images/bg-themes/girls/girl1.jpg" onclick="demo_image(id)" style="width:220px; height:120px;"></div>
+            <div id="auto_theme-4" class="box padding5"><img name="theme" src="custombg/images/bg-themes/nature/nature1.jpg" onclick="demo_image(id)" style="width:220px; height:120px;"></div>
+                <!--<span id="auto-img-click" class="fg-creamy button-active" >Save</span>
+                -->                 
+         </div>
+
+     </div>
+
+   <div id="more-opt-content" class="X-20">        
+      <div id="bg-edit-content" class="padding30 white-panel section-1-2 top35" >  
+         <div class="padding5">
+         <span class="font-trial fg-primary" >Background size</span>
+         <span class="X-10"><select id="bg-size-opt" onchange="bg_size()">
+       
+            <option class="padding5" value="auto">Auto</option>
+            <option value="contain">Contain</option>
+            <option value="cover">Cover</option>
+        </select></span>
+        </div>
+        
+        <div class="padding5">
+        <span class="font-trial fg-primary">Background repeat</span>
+        <span class="X-5">
+         <select id="bg-repeat-opt" onchange="bg_repeat()">
+
+            <option value="no-repeat">no-repeat</option>
+            <option value="repeat">repeat</option>
+            <option value="repeat-x">repeat-x</option>
+            <option value="repeat-y">repeat-y</option>
+            <option value="round">round</option>             
+        </select>
+        </span>
+        </div>
+        
+        <div class="padding5">           
+        <span class="font-trial fg-primary">Background position</span>
+        <span  style="padding-left:8px">
+         <select id="bg-pos-opt" onchange="bg_pos()">
+
+            <option value="center">center</option>
+            <option value="inherit">inherit</option>
+            <option value="top">top</option>
+            <option value="left">left</option>
+            <option value="right">right</option>
+            <option value="bottom">bottom</option>             
+        </select>
+        </span>
+        </div>
+        
+        <div class="padding5">           
+        <span class="font-trial fg-primary">Select Time</span>
+        <span  style="padding-left:68px">
+       <select id="img-time" onchange="get_time()">   
+            <option value="2000">2 sec</option>
+            <option value="3000">3 sec</option>
+            <option value="5000">5 sec</option>
+            <option value="10000">10 sec</option>
+            <option value="60000">1 min</option>
+        </select>
+        </span>
+        </div>
+        <div class="top35">
+        <span id="more-opt" class="font-trial top15 button-active" style="background:#0095DD;"  onclick="save_opt(id)">Save</span>
+        <span id="reset-opt" class="font-trial top15 button-active" style="background:#0095DD;"  onclick="save_opt(id)">Restore Defaults</span>
+	    <span  class=" bg-theme-col-3 button-active" onclick="Close()">Close</span>
+        </div>
+    </div>
+</div>
+ 
+   </div>
+</div>
+</div> <!--tab-1 closed -->
+  
+  <div id="tabs-2" class="font-trial justify">
+     <div>
+       <div>
+          <ul class="bg-theme-col-2" >
+            <li id="choose-col" class="Y15 text-center font-trial font-small col-list">Choose Color</li>
+            <li id="random-col"class="Y15 text-center font-trial font-small col-list">Random Color</li>
+            <li id="custom-col" class="Y15 text-center font-trial font-small col-list">Custom Color</li>
+            <li id="auto-col" class="Y15 text-center font-trial font-small col-list">Auto Change Color</li>
+         </ul>
+       </div>
+	   <div class="text-center" style="height:305px;">
+			<div id="choose-col-content" class="fg-black text-center">
+       	         <div style="margin:20px;">
+           			<!--<span class="fg-creamy button-active" onClick="savecol()" >Save</span>
+             		-->
+                </div>
+          
+                <div id="block1" class="blocks " style="background-color:red; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block2" class="blocks" style="background-color:blue;padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block3" class="blocks" style="background-color:green;padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block4" class="blocks" style="background-color:#1ABC9C; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block5" class="blocks" style="background-color:#16A085; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block6" class="blocks" style="background-color:#2ECC71; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block7" class="blocks" style="background-color:#27AE60; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block8" class="blocks" style="background-color:#3498DB; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block9" class="blocks" style="background-color:#2980B9; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block10" class="blocks" style="background-color:#9B59B6; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block11" class="blocks" style="background-color:#8E44AD; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block12" class="blocks" style="background-color:#34495E; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block13" class="blocks" style="background-color:#2C3E50; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block14" class="blocks" style="background-color:#F1C40F; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block15" class="blocks" style="background-color:#F39C12; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block16" class="blocks" style="background-color:#E67E22; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block17" class="blocks" style="background-color:#D35400; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block18" class="blocks" style="background-color:#E74C3C; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block19" class="blocks" style="background-color:#C0392B; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block20" class="blocks" style="background-color:#999966; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block21" class="blocks" style="background-color:#BDC3C7; padding-left:10px; float:left;" onclick="changecolor(id)"></div>  
+                <div id="block22" class="blocks" style="background-color:#95A5A6; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block23" class="blocks" style="background-color:#7F8C8D; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+                <div id="block24" class="blocks" style="background-color:#660000; padding-left:10px; float:left;" onclick="changecolor(id)"></div>
+
+            </div>
+        	<div id="random-col-content" class="fg-black X-20 text-center">
+            		
+    
+    <div id="random-col-demo" class="bg-green text-center" style="margin:20px; width:350px; height:220px; color:#f1f1f1; padding-top:60px;">
+                <p>Random color after each refresh</p>
+                  </div>
+        	</div>   
+            
+        	<div id="custom-col-content" class="fg-black text-center top15" style="width:680px;">
+             <input id="custom-col" class="color text-center" style=" height:150px; width:150px; border:1px solid #999966; border-radius:999px; outline:none !important;" value="66ff00">
+            
+        	
+        	</div>
+        	<div id="auto-col-content" class="fg-black X-20 text-center">
+                
+           <div id="auto-col-demo" class="bg-green text-center" style="margin:20px; width:350px; height:160px; color:#f1f1f1; padding-top:120px;">
+             Live changing background colors
+          </div>
+        	</div>
+       </div>
+	 </div>
+  </div> <!-- tab-2 closed -->
+  
+  
+ </div>	<!-- tabs closed -->
+ </div>
+ 
+<div class="font-trial top10" style="position:fixed; width:660px; height:30px; left:22%;">
+ 	
+    <div id="img_opt">
+        <span id="choose-img-click" class="fg-creamy bg-theme-col-3 button-active" onclick="saveimg()">Save</span>
+    	<span id="random-img-click" class="fg-creamy bg-theme-col-3 button-active">Save</span>
+        <span id="custom-img-click" class="fg-creamy bg-theme-col-3 button-active" onclick="savecustom_img()">Save</span>
+        <span id="auto-img-click" class="fg-creamy bg-theme-col-3 button-active">Save</span>
+        <span class="reset bg-theme-col-3 button-active" onclick="Defaultbg()">Reset</span>
+       	<span id="Clse" class="cursor-default fg-creamy bg-theme-col-3 button-active" onclick="Close()" style=" margin-left:400px;">Close</span>
+ 	</div>
+ 	
+    <div id="col_opt">    
+        <span id="choose-col-click" class="fg-creamy bg-theme-col-3 button-active" onclick="savecol()" >Save</span>
+    	<span id="random-col-click" class="fg-creamy bg-theme-col-3 button-active">Save</span>
+        <span id="custom-col-click" class="fg-cream bg-theme-col-3 button-active" onclick="savecustom_col()">Save</span>
+        <span id="auto-col-click" class="fg-creamy bg-theme-col-3 button-active">Save</span>
+        <span class="reset-col bg-theme-col-3 button-active" onclick="Defaultbg()">Reset</span>
+      	<span class="cursor-default fg-creamy bg-theme-col-3 button-active" onclick="Close()" style=" margin-left:410px;">Close</span>
+ 	</div>
+    
+    <div id="save-prompt" class="fg-black padding10 font-med text-center" style="width:100px; position:fixed; margin-left:300px; margin-top:-30px; z-index:9999; display:none;">
+    	Saved
+    </div>
+ 
+</div>
