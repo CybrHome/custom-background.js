@@ -1,14 +1,19 @@
 custom-background.js
 ====================
 
-A lightweight jQuery plugin that can easily be added to any website or web app to allow users change the website’s default background and save the background selected 
+A lightweight jQuery plugin  to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app.
 
-using local storage.
 
 Idea
 ====
 
 The idea is to let users choose any image or color and use it as background for website. The background image or color is saved in local storage of the browser.
+
+
+Browser Compatibility
+=====================
+
+IE9+, Chrome, Firefox, Opera, Safari
 
 
 Credits
