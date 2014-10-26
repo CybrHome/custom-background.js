@@ -4,13 +4,23 @@
 
 A lightweight jQuery plugin  to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app without any compromise on website's performance.
 
-Background Options availiable for users
+#### Features
+
+* 4 inbuilt themes with 40 sample images
+* Easy background selector window with background settings
+* User's background data/settings are saved in local storage
+* Appcache manifest file included for stronger file caching
+* Ultra Lightweight - only 2 js files that add less than 20 KBs
+* Background images and thumbnails are called on-demand using AJAX
+* Additional required CSS/JS files are called on-demand only when required
+* No need of server side languages or SQL, purely built using javascript/jQuery
+
+#### Background options availiable
 
 * Choose background image from provided backgrounds
 * Random background image on every page load
 * Upload custom image and use it as background
 * Live changing background images
-
 * Choose background color from provided color scheme
 * Random background color on every page load
 * Choose background color using color picker
@@ -24,7 +34,8 @@ The idea is to let users easily change the background of the website. Users can 
 Most websites today implement change background theme using server side languages. For e.g. Yahoo Mail, Gmail, Twitter etc.
 This is not always an easy solution for front end developers and designers. Moreover it kills the performance of the web page.
 
-We needed a client side solution to make this easier and faster. Hence, this plugin was developed. 
+We always needed a client side solution to make this easier and faster. Hence, this plugin was developed.
+
 
 ## Heavy use of HTML5 local storage
 
@@ -38,7 +49,7 @@ IE9+, Chrome, Firefox, Opera, Safari
 
 ## Credits
 
-Idea & Product Development: Shubham Badal
+Concept/Product Development: Shubham Badal
 
 Lead Javascript Developer: Ajeet Lakhani
 
