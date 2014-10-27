@@ -5,7 +5,6 @@ CACHE MANIFEST
 CACHE:
 
 #images
-
 images/bg-themes/all/all1.jpg
 images/bg-themes/all/all10.jpg
 images/bg-themes/all/all2.jpg
@@ -47,27 +46,33 @@ images/bg-themes/nature/nature7.jpg
 images/bg-themes/nature/nature8.jpg
 images/bg-themes/nature/nature9.jpg
 
-images/black-arrow.png
 images/jscolor/arrow.gif
 images/jscolor/cross.gif
 images/jscolor/hs.png
-images/white-cog-hi.png
+images/jscolor/hv.png
 
-#internal HTML documents
+images/black-arrow.png
+images/loading.gif
+images/white-cog-hi.png
+images/loading_dark_large.gif
 
 
 #style sheets
 css/options-window.css
 
-#style sheet images
-
 
 #javascript files
-js/jquery/jquery.js
-js/jquery/jquery-ui.js
+js/jquery/jquery.min.js
+js/jquery/jquery-ui.min.js
+
 js/main/options-window.js
+js/main/options-window.min.js
 js/main/custom-background.js
+js/main/custom-background.min.js
+
 js/components/jscolor.js
+js/components/jscolor.min.js
+
 
 NETWORK:
 *

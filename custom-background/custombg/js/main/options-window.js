@@ -347,6 +347,10 @@
 				 j =0;
 				 a= '#auto_theme-1';
 				 b = 'custombg/images/bg-themes/all/all';
+
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
+
 					demo_live(a,b,j);
 				
 				},function(e){
@@ -366,12 +370,16 @@
 
 			$('#demo').val(theme);
 
-			});					
+			});
+			
 			$('#auto_theme-2').hover(function(e){
 				var i = 0;
 				 j =0;
 				 a= '#auto_theme-2';
 				 b = 'custombg/images/bg-themes/cars/car';
+					
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
 					demo_live(a,b,j);
 				
 				},function(e){
@@ -383,10 +391,9 @@
 			$('#auto_theme-3').removeClass('selected-theme');
 			$('#auto_theme-4').removeClass('selected-theme');
 			$('#auto_theme-3').toggleClass('selected-theme');
-//			document.body.style.background = 'url('+$('#auto_theme-3>img').attr('src')+')';
 			theme = '#theme-3';
 	
-//			changing_img_bg(theme,true);
+
 			
 			$('#demo').val(theme);
 
@@ -397,6 +404,8 @@
 				 j =0;
 				 a= '#auto_theme-3';
 				 b = 'custombg/images/bg-themes/girls/girl';
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
 									
 					demo_live(a,b,j);
 					
@@ -445,6 +454,10 @@
 				 j =0;
 				 a= '#random_theme-1';
 				 b = 'custombg/images/bg-themes/all/all';
+
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
+
 					demo_live(a,b,j);
 				
 				},function(e){
@@ -467,6 +480,10 @@
 				 j =0;
 				 a= '#random_theme-2';
 				 b = 'custombg/images/bg-themes/cars/car';
+
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
+
 					demo_live(a,b,j);
 				
 				},function(e){
@@ -491,6 +508,9 @@
 				 a= '#random_theme-3';
 				 b = 'custombg/images/bg-themes/girls/girl';
 									
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
+
 					demo_live(a,b,j);
 					
 				},function(e){
@@ -512,6 +532,10 @@
 				 j =0;
 				 a= '#random_theme-4';
 				 b = 'custombg/images/bg-themes/nature/nature';
+
+					j+=1;									
+					$(a+'> img').attr('src',b+j+'.jpg');									
+
 					demo_live(a,b,j);
 
 				},function(e){

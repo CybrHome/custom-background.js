@@ -20,7 +20,7 @@ var jscolor = {
 
 
 	install : function() {
-		jscolor.addEvent(document.getElementById('main-div'), 'click', jscolor.init);
+		jscolor.addEvent(document.getElementById('options-window'), 'click', jscolor.init);
 	},
 
 
@@ -571,7 +571,7 @@ var jscolor = {
 
 		function removePicker() {
 			delete jscolor.picker.owner;
-			document.getElementsByTagName('body')[0].removeChild(jscolor.picker.boxB);
+			document.getElementById('custom-col-content').removeChild(jscolor.picker.boxB);
 		}
 
 
@@ -696,7 +696,7 @@ var jscolor = {
 			p.box.style.height = dims[1] + 'px';
 
 			// picker border
-			p.boxB.style.position = 'absolute';
+			p.boxB.style.position = 'fixed';
 			p.boxB.style.clear = 'both';
 			p.boxB.style.left = x+'px';
 			p.boxB.style.top = y+'px';
@@ -795,7 +795,7 @@ var jscolor = {
 			redrawSld();
 
 			jscolor.picker.owner = THIS;
-			document.getElementsByTagName('body')[0].appendChild(p.boxB);
+			document.getElementById('custom-col-content').appendChild(p.boxB);
 		}
 
 
@@ -985,7 +985,7 @@ var jscolor = {
 			case 0: jscolor.requireImage('../../images/jscolor/hs.png'); break;
 			case 1: jscolor.requireImage('../../images/jscolor/hv.png'); break;
 		}
-		jscolor.requireImage('../../images/cross.gif');
+		jscolor.requireImage('../../images/jscolor/cross.gif');
 		jscolor.requireImage('../../images/jscolor/arrow.gif');
 
 		this.importColor();

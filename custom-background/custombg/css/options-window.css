@@ -49,7 +49,7 @@ ul {
 	-o-padding-start: 0;
 	padding-start: 0
 }
-#main-div {
+#options-window {
 	display: none;
 	position:fixed;
 	top: 100;

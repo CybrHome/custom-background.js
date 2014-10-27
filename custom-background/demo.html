@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">  
+<html manifest="custombg/custombg.manifest">  
   	
     <head>
       <title>custom-background.js Demo</title>
@@ -15,22 +15,11 @@
 	<body>
       
       <!--  Create a button that will load change background window  -->
-      <input type="button" value="Change Background" onclick="loadOptionsWindow()">    
+      <input type="button" value="Change Background" onclick="loadOptionsWindow('custombg/options-window.html')">    
        
       <!-- Paste both the following divs below body start tag -->
-       <div id="main-div" class="fg-creamy bg-lightgrey"></div>
-       <div id="theme-div">
-          <img id="demo-img-1" class="bgfade">
-          <img id="demo-img-2" class="bgfade">
-          <img id="demo-img-3" class="bgfade">
-          <img id="demo-img-4" class="bgfade">
-          <img id="demo-img-5" class="bgfade">
-          <img id="demo-img-6" class="bgfade">
-          <img id="demo-img-7" class="bgfade">
-          <img id="demo-img-8" class="bgfade">
-          <img id="demo-img-9" class="bgfade">
-          <img id="demo-img-10" class="bgfade">        
-      </div>
+       <div id="options-window" class="fg-creamy bg-lightgrey"></div>
+     
       
      <!-- Your content goes here -->
      <div style="display:none;">Sample Content</div>

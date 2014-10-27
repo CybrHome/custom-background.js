@@ -45,11 +45,11 @@
 
   	function show_main_div()
 	{
-		$('#main-div').fadeToggle();
+		$('#options-window').fadeToggle();
 	}
 	function allclear()
 	{
-		$('#main-div').fadeOut();
+		$('#options-window').fadeOut();
 		
 	}
 
@@ -85,9 +85,7 @@
 	}
 	
 	function refreshed(){window.location.href=window.location.href}
-	function Close(){
-		$('#main-div').fadeOut();
-	}
+
 	
 	function saveimg(){
 		localStorage.bg_mode = 'choosen_image';
@@ -549,25 +547,25 @@ $(document).ready(function(e) {
 				}
 			if(localStorage.theme == '#theme-1')
 					{
-						var num =  getRandomInt(1,8);
+						var num =  getRandomInt(1,10);
 						var whichimage = 'custombg/images/bg-themes/all/all'+num+'.jpg';		
 						document.body.style.background = 'url(' + whichimage + ')';
 					}
 			else if(localStorage.theme == '#theme-2')
 					{
-						var num =  getRandomInt(1,8);
+						var num =  getRandomInt(1,10);
 						var whichimage = 'custombg/images/bg-themes/cars/car'+num+'.jpg';		
 						document.body.style.background = 'url(' + whichimage + ')';
 					}
 			else if(localStorage.theme == '#theme-3')
 					{
-						var num =  getRandomInt(1,8);
+						var num =  getRandomInt(1,10);
 						var whichimage = 'custombg/images/bg-themes/girls/girl'+num+'.jpg';		
 						document.body.style.background = 'url(' + whichimage + ')';
 					}
 			else if(localStorage.theme == '#theme-4')
 					{
-						var num =  getRandomInt(1,8);
+						var num =  getRandomInt(1,10);
 						var whichimage = 'custombg/images/bg-themes/nature/nature'+num+'.jpg';		
 						document.body.style.background = 'url(' + whichimage + ')';
 					}
