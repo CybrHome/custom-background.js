@@ -1,5 +1,5 @@
 <!doctype html>
-<html manifest="custombg/custombg.manifest">  
+<html>
   	
     <head>
       <title>custom-background.js Demo</title>
@@ -13,19 +13,18 @@
 	</head>
 
 	<body>
+    
+		<!-- Paste the following div below body start tag -->
+      	<div id="options-window" class="fg-creamy bg-lightgrey"></div>
       
-      <!--  Create a button that will load change background window  -->
-      <input type="button" value="Change Background" onclick="loadOptionsWindow('custombg/options-window.html')">    
-       
-      <!-- Paste both the following divs below body start tag -->
-       <div id="options-window" class="fg-creamy bg-lightgrey"></div>
+      	<!--  Create a button that will load background options window  -->
+      	<input type="button" value="Change Background" onclick="loadOptionsWindow('custombg/options-window.html')">    
+
+     	<!-- Your content goes here -->
+     	<div style="display:none;">Sample Content</div>
      
-      
-     <!-- Your content goes here -->
-     <div style="display:none;">Sample Content</div>
-     
-     <!-- insert just before the body ends -->
-     <script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
+     	<!-- insert just before the body ends -->
+     	<script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
         
 	</body>
     

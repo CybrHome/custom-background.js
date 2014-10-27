@@ -8,7 +8,7 @@
     <meta name="product" content="Cybrhome-Background.js">
     <meta name="description" content="Demonstration of Cybrhome-Background.js on a sample webapp page">
     <meta name="author" content="CybrSys">
-    <meta name="keywords" content="Cybrhome-Background.js,Background.js,chbg,jquery plugin,custom background,background plugin">
+    <meta name="keywords" content="custom-background.js,Background.js,custombg,jquery plugin,custom background,background plugin">
     <script src='custombg/js/jquery/jquery.min.js'></script>
   	<script src="custombg/js/jquery/jquery-ui.min.js"></script>
 
@@ -27,7 +27,14 @@
 			cursor:pointer;
         }
        .section-1-5:hover{
-		   background-color:red;}		
+		   background-color:red;}
+		.section-1-5:active{
+			-webkit-box-shadow: inset 0 0 12px #013e5f;
+			-moz-box-shadow: inset 0 0 12px #013e5f;
+			-ms-box-shadow: inset 0 0 12px #013e5f;
+			-o-box-shadow: inset 0 0 12px #013e5f;
+			box-shadow: inset 0 0 12px #013e5f;
+		}
         #search{
             width:500px; display:inline;
         }
@@ -48,15 +55,44 @@
         bg-lightblack{
             background-color:rgba(24,20,35,0.5);
         }
-        #chbg{
+        #custom-button{
             cursor:pointer;
             width:20px;
 			margin-right:25px;
             float:right;
         
         }
-
-        #chbg:active{
+		.box {
+			float: left;
+		}
+		.bg-lightblack {
+			background: #222;
+		}
+		
+		.fg-creamy {
+			color: #f1f1f1;
+		}
+		
+		.padding10 {
+			padding: 10px;
+		}	
+		
+		.font-med {
+			font-family: Verdana, Geneva, sans-serif;
+			line-height: normal;
+			font-size: 18px !important;
+		}
+		
+		.X-5 {
+			padding: 0 5%;
+		}
+		.fg-theme {
+			color: rgba(255,255,255,0.7) !important;
+		}
+		.bg-theme-col-2 {
+			background: #01527D;
+		}			
+        #custom-button:active{
             opacity:0.9;
         }
 		
@@ -69,7 +105,7 @@
 
 <body>
 
-   <div id="main-div" class="fg-creamy bg-lightgrey">
+   <div id="options-window" class="fg-creamy bg-lightgrey">
   
    
     </div><!-- main div closed-->
@@ -81,15 +117,15 @@
 	<div class=" bg-lightblack box section-4-5">
     	<p class="font-med X-5">My WebApp</p>
     </div>
-	<div class="bg-lightblack box section-1-5" style="text-align:right;">
-    	<p id="chbg" class="font-med" onClick="loadOptionsWindow()">
+	<div class="bg-lightblack box section-1-5" style="text-align:right;" onClick="loadOptionsWindow('custombg/options-window.html')">
+    	<p id="custom-button" class="font-med" >
         	<span>+</span>
         </p>
     </div>
 </div>
 
     
-<input type="button" style="visibility:hidden;" onClick="loadOptionsWindow()">
+<input type="button" style="visibility:hidden;" onClick="loadOptionsWindow('custombg/options-window.html')">
     
  <div>
  	<p>
@@ -111,22 +147,9 @@
   	<span id="search-btn" class="font-med padding10 fg-creamy bg-theme-col-2">Search</span>           
  </div>
  
-    <div id="theme-div">
-      <img id="demo-img-1" class="bgfade">
-      <img id="demo-img-2" class="bgfade">
-      <img id="demo-img-3" class="bgfade">
-      <img id="demo-img-4" class="bgfade">
-      <img id="demo-img-5" class="bgfade">
-      <img id="demo-img-6" class="bgfade">
-      <img id="demo-img-7" class="bgfade">
-      <img id="demo-img-8" class="bgfade">
-      <img id="demo-img-9" class="bgfade">
-      <img id="demo-img-10" class="bgfade">
-      
-    </div>    
+  
     
     <script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
-	<link rel="stylesheet" href="custombg/css/options-window.css">
 
 
 </body>
