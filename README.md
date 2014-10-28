@@ -29,6 +29,11 @@ A lightweight jQuery plugin  to allow users change the website’s default backg
 * Live changing background colors
 
 
+## Live Demo
+
+Try out the live demo [here](http://cybrsys.github.io/custom-background.js/custom-background/example.html).
+
+
 ## Documentation
 
 ###### Getting Started
