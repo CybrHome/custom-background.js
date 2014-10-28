@@ -4,7 +4,6 @@
  
  
    	var color , col_mode,img_mode,img_auto_time,theme;
-	var bgsize = localStorage.bg_size,bgposition = localStorage.bg_pos,bgrepeat = localStorage.bg_repeat,flag;
 	var stopanimation = false
 	
 //check if localstorage variable is available for the use! 
@@ -21,6 +20,8 @@
 			localStorage.setItem("bg_size");
 			localStorage.setItem("bg_pos");
 			localStorage.setItem("bg_repeat");
+		
+			var bgsize = localStorage.bg_size,bgposition = localStorage.bg_pos,bgrepeat = localStorage.bg_repeat,flag;
 
 		}
 	
