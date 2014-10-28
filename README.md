@@ -33,15 +33,26 @@ A lightweight jQuery plugin  to allow users change the website’s default backg
 
 ###### Getting Started
 
-Include **custombg** folder in your project, just right where your html files reside.
+First of all, include **custombg** folder in your project, exactly where html files of your web pages reside.
 
-Create a button that will load change background window
+This plugin requires jquery and jqueryUI. So, in case you are not already using it please add them. You can find them in  custombg/js/jquery and include it the html head.
+
+Paste the following div just below body start tag
+```html
+<div id="options-window" class="fg-creamy bg-lightgrey"></div>
+```
+
+Now create a button that will load background options window whenever clicked
 ```html
 <input type="button" value="Change Background" onclick="loadOptionsWindow()">
 ```
 
+Add the loader javascript just before end of body tag.
+```html
+<script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
+```
 
-###### Using HTML5 Appcache 
+###### Using HTML5 Appcache (Optional)
 
 Though use of appcache is recommended for best possible performance, it is still optional. Please use appcache only if you are comfortable using it. However, if you do not use appcache manifest, you have to depend on leverage browser caching only.
 
@@ -51,6 +62,14 @@ To use appcache, simple include the manifest file named **custombg.manifest** in
   <!DOCTYPE html>
   <html manifest="custombg/custombg.manifest">
 ```
+
+###### Performance Optimized
+The total size of this plugin is ~15Mb, 99% of which is only because of images. Please note that these images are never requested if not needed, and are called on-demand using AJAX. You just need to include a tiny custombg-loader.js that calls required html, js, css whenever required i.e. when 'Change Background' button is clicked. The main js file that the loader always calls is mandatory and costs only ~10 Kb (minified) and can further be cached.
+
+##### Changing Images or Themes
+
+To change any image just go to images/bg-themes/ and replace existing image(s) with new one(s).
+To do this, change themes's folder name in images/bg-themes/ and just find and replace 'Old theme name' with 'new theme name' in entire 'custombg' folder.
 
 ## Idea
 
