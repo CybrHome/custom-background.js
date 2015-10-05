@@ -88,7 +88,7 @@ We always needed a client side solution to make this easier and faster. Hence, t
 
 ## Heavy use of HTML5 local storage
 
-This plugin is mostly based on HTML5 local storage. This plugin uses local storage to save background settings, backgorund colors, background image urls, base64 png images etc. Even today, HTML5 local storage is often underestimated and poorly implemented. But, this plugin was possible only by harnessing the complete potential of html5 local storage.
+This plugin is mostly based on HTML5 local storage. This plugin uses local storage to save background settings, background colors, background image urls, base64 png images etc. Even today, HTML5 local storage is often underestimated and poorly implemented. But, this plugin was possible only by harnessing the complete potential of html5 local storage.
 
 
 ## Browser Compatibility
