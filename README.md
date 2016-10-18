@@ -1,24 +1,21 @@
 # custom-background.js
 
-> Lets people change the site's background easily.
+> Let people change your site's background. Integrate this jQuery plugin to your site to let users change the site’s background. It saves the chosen custom background (color or image) to the local storage.
 
-## Intro
-
-A lightweight jQuery plugin to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app without any compromise on website's performance.
 
 ## Live Demo
 
 Try out the live demo [here](http://cybrhome.github.io/custom-background.js).
 
 
-## Product
+## Intro
 
-The idea is to let users easily change the background of the website. Users can choose any image or color from the options window to overwrite the default background (provided by developer) of the website. And since the background image or color set is saved in local storage of the browser, the background settings will sustain until the user clears local storage.
+The idea is to let users easily change the background of the website. Users can choose any image or color from the options window to overwrite the default background (set by the developer) of the website. And since the background image or color set is saved in local storage of the browser, the background settings will be retained till the user clears local storage.
 
 Most websites today implement change background theme using server side languages. For e.g. Yahoo Mail, Gmail, Twitter etc.
 This is not always an easy solution for front end developers and designers. Moreover it kills the performance of the web page.
 
-We always needed a client side solution to make this easier and faster. Hence, this plugin was developed.
+This plugin is a client side approach for website background customization.
 
 
 #### Features
@@ -47,7 +44,7 @@ We always needed a client side solution to make this easier and faster. Hence, t
 
 ## Documentation
 
-###### Getting Started
+#### Getting Started
 
 First of all, include **custombg** folder in your project, exactly where html files of your web pages reside.
 
@@ -68,7 +65,10 @@ Add the loader javascript just before end of body tag.
 <script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
 ```
 
-###### Using HTML5 Appcache (Optional)
+*See the docs folder to see an example of integration.*
+
+
+#### Using HTML5 Appcache (Optional)
 
 Though use of appcache is recommended for best possible performance, it is still optional. Please use appcache only if you are comfortable using it. However, if you do not use appcache manifest, you have to depend on leverage browser caching only.
 
@@ -81,10 +81,10 @@ To use appcache, simple include the manifest file named **custombg.manifest** in
 
 ## Additional Information
 
-###### Performance Optimized
+#### Performance Optimized
 The total size of this plugin is ~15Mb, 99% of which is only because of images. Please note that these images are never requested if not needed, and are called on-demand using AJAX. You just need to include a tiny custombg-loader.js that calls required html, js, css whenever required i.e. when 'Change Background' button is clicked. The main js file that the loader always calls is mandatory and costs only ~10 Kb (minified) and can further be cached.
 
-##### Changing Images or Themes
+#### Changing Images or Themes
 
 To change any image just go to images/bg-themes/ and replace existing image(s) with new one(s).
 To do this, change themes's folder name in images/bg-themes/ and just find and replace 'Old theme name' with 'new theme name' in entire 'custombg' folder.
