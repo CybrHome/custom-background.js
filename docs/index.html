@@ -2,13 +2,14 @@
 <html>
 <head>
 	
-    <title>My WebApp</title>
+    <title>Custom Background</title>
 
     <meta charset="utf-8">
-    <meta name="product" content="Cybrhome-Background.js">
-    <meta name="description" content="Demonstration of Cybrhome-Background.js on a sample webapp page">
-    <meta name="author" content="CybrSys">
-    <meta name="keywords" content="custom-background.js,Background.js,custombg,jquery plugin,custom background,background plugin">
+    <meta name="description" content="A custom background example on a web page using localstorage">
+    <meta name="author" content="CybrHome">
+    <meta name="product" content="custom-background.js">
+    <meta name="keywords" content="custom-background.js, Background.js, custombg, jquery plugin, custom background, background plugin , localstorage background, cybrhome github">
+    
     <script src='custombg/js/jquery/jquery.min.js'></script>
   	<script src="custombg/js/jquery/jquery-ui.min.js"></script>
 
@@ -105,52 +106,44 @@
 
 <body>
 
-   <div id="options-window" class="fg-creamy bg-lightgrey">
-  
-   
-    </div><!-- main div closed-->
+    <div id="options-window" class="fg-creamy bg-lightgrey">
+    </div><!-- div where options window is inserted -->
 
- 
-    
-    
-<div class="bg-lightblack fg-creamy" style="width:100%; margin-top:0;">
-	<div class=" bg-lightblack box section-4-5">
-    	<p class="font-med X-5">My WebApp</p>
+    <div class="bg-lightblack fg-creamy" style="width:100%; margin-top:0;">
+    	<div class=" bg-lightblack box section-4-5">
+        	<p class="font-med X-5">Your Site</p>
+        </div>
+    	<div class="bg-lightblack box section-1-5" style="text-align:right;" onClick="loadOptionsWindow('custombg/options-window.html')">
+        	<p id="custom-button" class="font-med" >
+            	<span>+</span>
+            </p>
+        </div>
     </div>
-	<div class="bg-lightblack box section-1-5" style="text-align:right;" onClick="loadOptionsWindow('custombg/options-window.html')">
-    	<p id="custom-button" class="font-med" >
-        	<span>+</span>
+    
+    <input type="button" style="visibility:hidden;" onClick="loadOptionsWindow('custombg/options-window.html')">
+        
+    <div>
+     	<p>
+        	<h1 class="fg-theme" style="text-align:center; margin-top:80px; font-size:80px !important;font-family: monospace;">Your Site</h1>
+     		<h2 class="fg-theme" style="text-align:center; font-size:30px !important;font-family: monospace;">Click '+' to change background</h2>
         </p>
+    </div>   
+    
+    <center>
+    <div id="search-div" class="padding10" style="background:rgba(255,255,255,0.5); width:800px; margin-top:50px;">   
+    	<input id="search" type="text" placeholder="Search" class="padding10 font-med fg-lightblack">
+    	<select class="padding10 font-med" style="color:#666;">
+    		<option>Web</option>
+    		<option>Images</option>  
+            <option>People</option>
+            <option>Companies</option>
+            <option>Projects</option>
+    	</select>
+    	<span id="search-btn" class="font-med padding10 fg-creamy bg-theme-col-2">Search</span>           
     </div>
-</div>
-
-    
-<input type="button" style="visibility:hidden;" onClick="loadOptionsWindow('custombg/options-window.html')">
-    
- <div>
- 	<p>
-    	<h1 class="fg-theme" style="text-align:center; margin-top:80px; font-size:80px !important;font-family: monospace;">My WebApp</h1>
- 		<h2 class="fg-theme" style="text-align:center; font-size:30px !important;font-family: monospace;">Click '+' to change background</h2>
-     </p>
-  </div>   
-    
- <div id="search-div" class="padding10" style="background:rgba(255,255,255,0.5); width:800px; margin-top:50px; margin-left:250px;">   
- 	<input id="search" type="text" placeholder="Search" class="padding10 font-med fg-lightblack">
- 	<select class="padding10 font-med" style="color:#666;">
- 		<option>Categories</option>
- 		<option>Category-1</option>  
-        <option>Category-2</option>
-        <option>Category-3</option>
-        <option>Category-4</option>
-        <option>Category-5</option>
-  	</select>
-  	<span id="search-btn" class="font-med padding10 fg-creamy bg-theme-col-2">Search</span>           
- </div>
+    </center>
  
-  
-    
     <script type="text/javascript" src="custombg/js/custombg-loader.js"></script>
-
 
 </body>
 </html>
