@@ -1,10 +1,25 @@
 # custom-background.js
 
-> Easily add background themes option to your website in a few minutes.
+> Lets people change the site's background easily.
 
 ## Intro
 
-A lightweight jQuery plugin  to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app without any compromise on website's performance.
+A lightweight jQuery plugin to allow users change the website’s default background and saves the background selected to local storage. This plugin can easily be added to any website or web app without any compromise on website's performance.
+
+## Live Demo
+
+Try out the live demo [here](http://cybrhome.github.io/custom-background.js).
+
+
+## Product
+
+The idea is to let users easily change the background of the website. Users can choose any image or color from the options window to overwrite the default background (provided by developer) of the website. And since the background image or color set is saved in local storage of the browser, the background settings will sustain until the user clears local storage.
+
+Most websites today implement change background theme using server side languages. For e.g. Yahoo Mail, Gmail, Twitter etc.
+This is not always an easy solution for front end developers and designers. Moreover it kills the performance of the web page.
+
+We always needed a client side solution to make this easier and faster. Hence, this plugin was developed.
+
 
 #### Features
 
@@ -28,10 +43,6 @@ A lightweight jQuery plugin  to allow users change the website’s default backg
 * Choose background color using color picker
 * Live changing background colors
 
-
-## Live Demo
-
-Try out the live demo [here](http://cybrsys.github.io/custom-background.js/custom-background/example.html).
 
 
 ## Documentation
@@ -68,6 +79,8 @@ To use appcache, simple include the manifest file named **custombg.manifest** in
   <html manifest="custombg/custombg.manifest">
 ```
 
+## Additional Information
+
 ###### Performance Optimized
 The total size of this plugin is ~15Mb, 99% of which is only because of images. Please note that these images are never requested if not needed, and are called on-demand using AJAX. You just need to include a tiny custombg-loader.js that calls required html, js, css whenever required i.e. when 'Change Background' button is clicked. The main js file that the loader always calls is mandatory and costs only ~10 Kb (minified) and can further be cached.
 
@@ -76,37 +89,39 @@ The total size of this plugin is ~15Mb, 99% of which is only because of images. 
 To change any image just go to images/bg-themes/ and replace existing image(s) with new one(s).
 To do this, change themes's folder name in images/bg-themes/ and just find and replace 'Old theme name' with 'new theme name' in entire 'custombg' folder.
 
-## Idea
-
-The idea is to let users easily change the background of the website. Users can choose any image or color from the options window to overwrite the default background (provided by developer) of the website. And since the background image or color set is saved in local storage of the browser, the background settings will sustain until the user clears local storage.
-
-Most websites today implement change background theme using server side languages. For e.g. Yahoo Mail, Gmail, Twitter etc.
-This is not always an easy solution for front end developers and designers. Moreover it kills the performance of the web page.
-
-We always needed a client side solution to make this easier and faster. Hence, this plugin was developed.
-
-
-## Heavy use of HTML5 local storage
+#### Heavy use of HTML5 local storage
 
 This plugin is mostly based on HTML5 local storage. This plugin uses local storage to save background settings, background colors, background image urls, base64 png images etc. Even today, HTML5 local storage is often underestimated and poorly implemented. But, this plugin was possible only by harnessing the complete potential of html5 local storage.
 
+#### Bugs and feature requests
 
-## Browser Compatibility
+This project is maintained by CybrHome. If you encounter any issues while using this plugin or have any ideas for this plugin, feel free to create an issue or feature request on GitHub. Alternatively, you can write to the creators directly.
+
+#### Browser Compatibility
 
 IE9+, Chrome, Firefox, Opera, Safari
 
 
-## Credits
+## Creators
 
-Concept/Product Development: Shubham Badal
+**Shubham Badal**
 
-Lead Javascript Developer: Ajeet Lakhani
+- <https://twitter.com/ShubhamBadal>
+- <https://github.com/ShubhamBadal>
+- <http://www.cybrhome.com/ShubhamBadal>
+
+**Ajeet Lakhani**
+
+- <https://twitter.com/lakhani_ajeet>
+- <https://github.com/Ajeetlakhani>
+- <http://www.cybrhome.com/AjeetLakhani>
+
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 CybrSys
+Copyright (c) 2014-2016 CybrHome
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
